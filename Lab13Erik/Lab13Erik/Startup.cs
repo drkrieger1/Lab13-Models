@@ -37,6 +37,10 @@ namespace Lab13Erik
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/error");
+            }
             app.UseStaticFiles();
 
             app.UseMvc(route =>
